@@ -27,37 +27,37 @@ const _PROTOBUF_VERSION_CHECK: () = ::protobuf::VERSION_3_2_0;
 
 ///  to convert addresses from bytes to hex address, https://github.com/ethereum/go-ethereum/blob/4b2ff1457ac28fb2894485194e0e344e84c2bcd7/common/types.go#L210
 #[derive(PartialEq,Clone,Default,Debug)]
-// @@protoc_insertion_point(message:nakji.evm.chain.Transaction)
+// @@protoc_insertion_point(message:lotus.evm.chain.Transaction)
 pub struct Transaction {
     // message fields
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.ts)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.ts)
     pub ts: ::protobuf::MessageField<::protobuf::well_known_types::timestamp::Timestamp>,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.From)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.From)
     pub From: ::std::vec::Vec<u8>,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.Hash)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.Hash)
     pub Hash: ::std::string::String,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.Size)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.Size)
     pub Size: f64,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.AccountNonce)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.AccountNonce)
     pub AccountNonce: u64,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.Price)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.Price)
     pub Price: u64,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.GasLimit)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.GasLimit)
     pub GasLimit: u64,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.Recipient)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.Recipient)
     pub Recipient: ::std::vec::Vec<u8>,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.Amount)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.Amount)
     pub Amount: u64,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.Payload)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.Payload)
     pub Payload: ::std::vec::Vec<u8>,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.V)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.V)
     pub V: u64,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.R)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.R)
     pub R: u64,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Transaction.S)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Transaction.S)
     pub S: u64,
     // special fields
-    // @@protoc_insertion_point(special_field:nakji.evm.chain.Transaction.special_fields)
+    // @@protoc_insertion_point(special_field:lotus.evm.chain.Transaction.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
 }
 
@@ -366,25 +366,25 @@ impl ::protobuf::reflect::ProtobufValue for Transaction {
 }
 
 #[derive(PartialEq,Clone,Default,Debug)]
-// @@protoc_insertion_point(message:nakji.evm.chain.Block)
+// @@protoc_insertion_point(message:lotus.evm.chain.Block)
 pub struct Block {
     // message fields
-    // @@protoc_insertion_point(field:nakji.evm.chain.Block.ts)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Block.ts)
     pub ts: ::protobuf::MessageField<::protobuf::well_known_types::timestamp::Timestamp>,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Block.Hash)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Block.Hash)
     pub Hash: ::std::string::String,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Block.Difficulty)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Block.Difficulty)
     pub Difficulty: u64,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Block.Number)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Block.Number)
     pub Number: u64,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Block.GasLimit)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Block.GasLimit)
     pub GasLimit: u64,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Block.GasUsed)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Block.GasUsed)
     pub GasUsed: u64,
-    // @@protoc_insertion_point(field:nakji.evm.chain.Block.Nonce)
+    // @@protoc_insertion_point(field:lotus.evm.chain.Block.Nonce)
     pub Nonce: u64,
     // special fields
-    // @@protoc_insertion_point(special_field:nakji.evm.chain.Block.special_fields)
+    // @@protoc_insertion_point(special_field:lotus.evm.chain.Block.special_fields)
     pub special_fields: ::protobuf::SpecialFields,
 }
 
@@ -597,7 +597,7 @@ impl ::protobuf::reflect::ProtobufValue for Block {
 }
 
 static file_descriptor_proto_data: &'static [u8] = b"\
-    \n\x0bchain.proto\x12\x0fnakji.evm.chain\x1a\x1fgoogle/protobuf/timestam\
+    \n\x0bchain.proto\x12\x0flotus.evm.chain\x1a\x1fgoogle/protobuf/timestam\
     p.proto\"\xc5\x02\n\x0bTransaction\x12*\n\x02ts\x18\x01\x20\x01(\x0b2\
     \x1a.google.protobuf.TimestampR\x02ts\x12\x12\n\x04From\x18\x02\x20\x01(\
     \x0cR\x04From\x12\x12\n\x04Hash\x18\x03\x20\x01(\tR\x04Hash\x12\x12\n\

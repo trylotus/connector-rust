@@ -33,7 +33,7 @@ mod tests {
         let topic = Topic{
             env: Env::Prod,
             message_type: MessageType::BF,
-            author: "nakji".to_string(),
+            author: "lotus".to_string(),
             connector_name: "ethereum".to_string(),
             version,
             event_name: "chain_Block".to_string(),

@@ -23,5 +23,5 @@ jobs:
             ~/.cargo/git/db/
             target/
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.toml') }}
-      - name: Publish `nakji-connector`
-        run: cargo publish --token ${CARGO_REGISTRY_TOKEN} -p nakji-connector
+      - name: Publish `lotus-connector`
+        run: cargo publish --token ${CARGO_REGISTRY_TOKEN} -p lotus-connector
