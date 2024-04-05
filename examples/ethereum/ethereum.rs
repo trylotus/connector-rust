@@ -5,9 +5,9 @@ use ethers::utils::hex::encode;
 use eyre::Result;
 use protobuf::well_known_types::timestamp::Timestamp;
 
-use nakji_connector::connector::Connector;
-use nakji_connector::kafka_utils::{Message, MessageType, topic, Topic};
-use nakji_connector::kafka_utils::key::Key;
+use lotus_connector::connector::Connector;
+use lotus_connector::kafka_utils::{Message, MessageType, topic, Topic};
+use lotus_connector::kafka_utils::key::Key;
 
 use crate::chain::Block as ProtoBlock;
 use crate::chain::chain::Transaction as ProtoTransaction;

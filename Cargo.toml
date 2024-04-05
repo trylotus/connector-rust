@@ -1,10 +1,10 @@
 [package]
-name = "nakji-connector"
+name = "lotus-connector"
 version = "0.1.0"
 edition = "2021"
-authors = ["Nakji Network"]
-description = "A Rust implementation of nakji-connector."
-repository = "https://github.com/nakji-network/connector-rust"
+authors = ["Lotus Network"]
+description = "A Rust implementation of lotus-connector."
+repository = "https://github.com/trylotus/connector-rust"
 license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

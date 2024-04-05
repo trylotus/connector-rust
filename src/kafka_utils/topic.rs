@@ -145,7 +145,7 @@ mod tests {
         let topic = Topic::new(
             Env::Test,
             MessageType::FCT,
-            "nakji".to_string(),
+            "lotus".to_string(),
             "ethereum".to_string(),
             version.clone(),
             "evm_Block".to_string(),
@@ -154,7 +154,7 @@ mod tests {
         let expected = Topic {
             env: Env::Test,
             message_type: MessageType::FCT,
-            author: "nakji".to_string(),
+            author: "lotus".to_string(),
             connector_name: "ethereum".to_string(),
             version,
             event_name: "evm_Block".to_string(),
@@ -170,7 +170,7 @@ mod tests {
         let topic = Topic::new(
             Env::Test,
             MessageType::FCT,
-            "nakji".to_string(),
+            "lotus".to_string(),
             "ethereum".to_string(),
             version,
             "evm_Block".to_string(),
@@ -178,7 +178,7 @@ mod tests {
 
         let schema = topic.to_schema();
 
-        assert_eq!(schema, "nakji.ethereum.0_1_0.evm_Block");
+        assert_eq!(schema, "lotus.ethereum.0_1_0.evm_Block");
     }
 
     #[test]
@@ -188,7 +188,7 @@ mod tests {
         let topic = Topic::new(
             Env::Dev,
             MessageType::FCT,
-            "nakji".to_string(),
+            "lotus".to_string(),
             "ethereum".to_string(),
             version,
             "chain_Block".to_string(),
@@ -196,6 +196,6 @@ mod tests {
 
         let schema = topic.to_string();
 
-        assert_eq!(schema, "dev.fct.nakji.ethereum.3_2_1.chain_Block");
+        assert_eq!(schema, "dev.fct.lotus.ethereum.3_2_1.chain_Block");
     }
 }

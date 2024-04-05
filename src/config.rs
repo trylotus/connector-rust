@@ -50,8 +50,8 @@ impl Config {
         let default_config_paths = vec![
             "./".to_string(),
             config_path.clone(),
-            config_path + "/nakji/",
-            "/etc/nakji/".to_string(),
+            config_path + "/lotus/",
+            "/etc/lotus/".to_string(),
         ];
 
         let files: Vec<_> = default_config_paths.into_iter().map(|p| p + config_file_name).filter_map(|f: String| File::open(f).ok()).collect();

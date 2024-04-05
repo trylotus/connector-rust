@@ -115,7 +115,7 @@ mod tests {
         let eth_block = utils::build_block();
 
         let mut topic_types: HashMap<String, Box<dyn MessageDyn>> = HashMap::new();
-        topic_types.insert("nakji.protoregistry.0_0_0.chain_Block".to_string(), Box::new(eth_block.clone()));
+        topic_types.insert("lotus.protoregistry.0_0_0.chain_Block".to_string(), Box::new(eth_block.clone()));
 
         let topic_proto_messages = build_topic_proto_messages(topic_types, MessageType::SYS);
 
@@ -123,8 +123,8 @@ mod tests {
 
         let tpm = TopicProtoMsg {
             message_type: MessageType::SYS,
-            topic_name: "nakji.protoregistry.0_0_0.chain_Block".to_string(),
-            proto_message_name: "nakji.evm.Block".to_string(),
+            topic_name: "lotus.protoregistry.0_0_0.chain_Block".to_string(),
+            proto_message_name: "lotus.evm.Block".to_string(),
             descriptor: vec![],
         };
         expected.push(tpm);
@@ -136,15 +136,15 @@ mod tests {
     fn test_generate_descriptor_file() {
         let tpm1 = TopicProtoMsg {
             message_type: MessageType::CMD,
-            topic_name: "nakji.ethereum.0_0_0.chain_Block".to_string(),
-            proto_message_name: "nakji.evm.Block".to_string(),
+            topic_name: "lotus.ethereum.0_0_0.chain_Block".to_string(),
+            proto_message_name: "lotus.evm.Block".to_string(),
             descriptor: vec![],
         };
 
         let tpm2 = TopicProtoMsg {
             message_type: MessageType::CMD,
-            topic_name: "nakji.ethereum.0_0_0.chain_Transaction".to_string(),
-            proto_message_name: "nakji.evm.Transaction".to_string(),
+            topic_name: "lotus.ethereum.0_0_0.chain_Transaction".to_string(),
+            proto_message_name: "lotus.evm.Transaction".to_string(),
             descriptor: vec![],
         };
 
@@ -168,7 +168,7 @@ mod tests {
     fn test_generate_descriptor_file_with_wrong_proto_message_name() {
         let tpm = TopicProtoMsg {
             message_type: MessageType::CMD,
-            topic_name: "nakji.ethereum.0_0_0.chain_Block".to_string(),
+            topic_name: "lotus.ethereum.0_0_0.chain_Block".to_string(),
             proto_message_name: "random.Block".to_string(),
             descriptor: vec![],
         };

@@ -1975,7 +1975,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "nakji-connector"
+name = "lotus-connector"
 version = "0.1.0"
 dependencies = [
  "config",
